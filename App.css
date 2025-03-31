@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+.bgRotate{
+    animation: rotate-animation 10s infinite linear;
+
+}
+@keyframes rotate-animation {
+	0% {
+		transform: rotatey(0deg);
+  }
+  50% {
+		transform: rotatey(180deg);
+	}
+	100% {
+		transform: rotatey(360deg);
+	}
+}
